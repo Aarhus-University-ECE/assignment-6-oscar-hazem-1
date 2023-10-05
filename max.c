@@ -9,7 +9,7 @@ int max(int *numbers, int size) {
 //precondition: The input must be an array of numbers with the size of int size. 
 //postcondition: the function must return the highest value in the array.
 
-assert(sizeof(numbers) == size); // checks that the size of the array is equal to the integer size
+//assert(sizeof(numbers) == size); // checks that the size of the array is equal to the integer size
 
 int numMax = 0; // variable to store the highest number in the array 
 
@@ -24,7 +24,7 @@ for(int i = 1; i < size; i++){ //loop through the array, starting from index 1
 }
 
   return numMax; 
-  return -1;
+  
 }
 
 #ifndef TEST

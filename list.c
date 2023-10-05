@@ -20,9 +20,9 @@ void add(node *head, int x) {
 }
 
 // exersice 3.b
-int size(node *l) {
+int size(node *l) { 
 
-assert(l != NULL);
+assert(l != NULL); // check 
 
 int counter = 0; 
 
@@ -74,8 +74,8 @@ while(p->next != NULL){
   
 }
 
+  return largestValue;
 
-  return 0;
 }
 
 #ifndef TEST
