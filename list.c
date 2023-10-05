@@ -22,6 +22,19 @@ void add(node *head, int x) {
 // exersice 3.b
 int size(node *l) {
 
+assert(l != NULL);
+
+int counter = 0; 
+
+node *p = l; 
+
+
+while(p->next != NULL){
+  p = p->next;
+  counter++;
+}
+
+  return counter; 
 	return 0;
 }
 
@@ -33,6 +46,7 @@ void printout(node *l) {
   node *p = l->next;
   while (p != NULL) {
     printf("%d, ", p->data);
+    p = p->next; // go to the next node in the linked list.
   }
   printf("\n");
 }
@@ -42,6 +56,24 @@ int largest(node *l) {
   // pre:  head poinst to the first, empty element.
   // 	     The last element's next is NULL.
   // post: Returns the largest value of the list
+
+
+assert(l != NULL);
+int largestValue = 0;
+node *p = l; 
+
+
+while(p->next != NULL){
+  
+  if(p->data > largestValue){
+    largestValue = p->data;
+  }
+
+
+  p = p->next;
+  
+}
+
 
   return 0;
 }
